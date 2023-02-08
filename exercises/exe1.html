@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+
+    <script>
+        let name = window.prompt('Type your name. ');
+        window.alert('Welcome, ' + name);
+
+        // By default, anything typed in the prompt is a String, so it is necessary to convert String to Number.
+       let n1 = Number.parseFloat(window.prompt('insert a number here.')); // Or just Number()
+       let n2 = Number.parseFloat(window.prompt('insert a another number here.'));
+       let result = n1 + n2
+       window.alert(`The sum between ${n1} and ${n2} is ${result}`);
+    </script>
+</body>
+</html>
