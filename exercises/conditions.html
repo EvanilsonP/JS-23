@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+
+    <h1>FINE SYSTEM</h1>
+
+    Car speed <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="verify" onclick="calculate()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calculate() {
+            let txtv = document.getElementById('txtvel');
+            let res = document.getElementById('res');
+            let speed = Number(txtv.value);
+            res.innerHTML = `Your current speed is ${speed} Km/h <br>`; 
+
+            if(speed >= 60) {
+                res.innerHTML += `You are being fined for speeding <br>`;
+            }
+
+            res.innerHTML += `Always drive with your seat belt`;
+        }
+    </script>
+
+</body>
+</html>
