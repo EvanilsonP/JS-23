@@ -10,6 +10,7 @@ console.log(numbers);
 
 // OR
 
+// For each position inside of 'numbers'
 for(let position in numbers) {
     console.log(`The position ${position} has the value ${numbers[position]}`);
 };
